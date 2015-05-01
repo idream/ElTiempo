@@ -14,7 +14,7 @@
             <?php if ($logo): ?>
               <img src="<?php print $logo ?>"  id="logo" />
             <?php endif; ?>
-            <?php print $site_html ?>
+            <?php //print $site_html ?>
             </a></strong></div>
           <?php else: /* Use h1 when the content title is empty */ ?>
             <h1 id="branding"><a href="<?php print $front_page ?>">

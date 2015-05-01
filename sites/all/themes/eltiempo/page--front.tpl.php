@@ -1,5 +1,8 @@
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
 ?>
   <?php print render($page['header']); ?>
 
@@ -14,7 +17,7 @@
             <?php if ($logo): ?>
               <img src="<?php print $logo ?>"  id="logo" />
             <?php endif; ?>
-            <?php print $site_html ?>
+            <?php //print $site_html ?>
             </a></strong></div>
           <?php else: /* Use h1 when the content title is empty */ ?>
             <h1 id="branding"><a href="<?php print $front_page ?>">
